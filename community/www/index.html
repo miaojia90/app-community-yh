@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name=screen-orientation content=portrait><meta name=apple-mobile-web-app-capable content=yes><meta name=format-detection content="telephone=no"><meta name=full-screen content=yes><meta name=x5-fullscreen content=true><title></title><script>var iWidth = document.documentElement.clientWidth;
+    document.getElementsByTagName("html")[0].style.fontSize = iWidth / 10 + "px";</script><link href=/vue-app/community/static/css/main.0b8194c554c6ebc10ac5949d5d20d6a8.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/vue-app/community/static/js/manifest-fe3052c11efdb3d2928f.js></script><script type=text/javascript src=/vue-app/community/static/js/vendor-e9a0b356145ef109065b.js></script><script type=text/javascript src=/vue-app/community/static/js/main-f724b8618e05742c0aa9.js></script></body></html><script type=text/javascript>function enterDetailPageEvent(url, uid) {
+    if (!!!uid) {
+        if (/JFZFortune/i.test(navigator.userAgent)) {
+            WebViewJavascriptBridge.ready(function(bridge) {
+                bridge.jumpToView('4', '0', {
+                     "urlString": decodeURI(url)
+                });
+            });
+        } else {
+            window.location.href = decodeURI(url);
+        }
+    } else {
+        if (/JFZFortune/i.test(navigator.userAgent)) {
+            WebViewJavascriptBridge.ready(function(bridge) {
+                bridge.jumpToView('32', '0', {
+                    "uid": uid
+                });
+            });
+        } else {
+            window.location.href = decodeURI(url);
+        }
+    }
+}</script>
